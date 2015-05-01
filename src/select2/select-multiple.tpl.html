@@ -22,7 +22,8 @@
         ng-model="$select.search"
         ng-click="$select.activate()"
         style="width: 34px;"
-        ondrop="return false;">
+        ondrop="return false;"
+        ui-select-bind-attrs="{name: name}">
     </li>
   </ul>
   <div class="select2-drop select2-with-searchbox select2-drop-active"
