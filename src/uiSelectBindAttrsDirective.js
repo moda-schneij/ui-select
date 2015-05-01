@@ -1,6 +1,5 @@
 uis.directive('uiSelectBindAttrs',
-  ['$parse',
-  function($parse) {
+  function() {
 
   return {
     restrict: 'A',
@@ -11,4 +10,4 @@ uis.directive('uiSelectBindAttrs',
       });
     }
   };
-}]);
+});
