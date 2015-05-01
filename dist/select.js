@@ -1,7 +1,7 @@
 /*!
  * ui-select
  * http://github.com/angular-ui/ui-select
- * Version: 0.11.1 - 2015-05-01T20:35:40.397Z
+ * Version: 0.11.1 - 2015-05-01T20:47:30.923Z
  * License: MIT
  */
 
@@ -809,6 +809,8 @@ uis.directive('uiSelect',
             element.removeAttr("tabindex");
           });
         }
+
+        scope.name = attrs.name; //get from ui-select-bind-attrs directive
 
         scope.$watch('searchEnabled', function() {
             var searchEnabled = scope.$eval(attrs.searchEnabled);
