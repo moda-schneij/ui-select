@@ -58,8 +58,6 @@ uis.directive('uiSelect',
           });
         }
 
-        scope.name = attrs.name; //get from ui-select-bind-attrs directive
-
         scope.$watch('searchEnabled', function() {
             var searchEnabled = scope.$eval(attrs.searchEnabled);
             $select.searchEnabled = searchEnabled !== undefined ? searchEnabled : uiSelectConfig.searchEnabled;
